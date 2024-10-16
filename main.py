@@ -37,9 +37,9 @@ with st.container():
         grade9 = st.selectbox("Grade 9", vars.grades, index=None, placeholder="Please choose a grade")
         grade10 = st.selectbox("Grade 10", vars.grades, index=None, placeholder="Please choose a grade")
     if st.button("Submit"):
-        subs = [sub1, sub2, sub3, sub4, sub5, sub6, sub7]
+        subs = [sub1, sub2, sub3, sub4, sub5, sub6, sub7, sub8, sub9, sub10]
         double = False
-        for i in range(0, 7):
+        for i in range(0, 10):
             if i < 4:
                 if subs[i] == subs[i+1]:
                     double = True
@@ -49,14 +49,14 @@ with st.container():
             st.success("Data Submitted")
             # Make DataFrame for bar chart to be plotted
             df = pd.DataFrame({
-                'Subjects' : [sub1, sub2, sub3, sub4, sub5, sub6, sub7],
-                'Grades' : [grade1, grade2, grade3, grade4, grade5, grade6, grade7]
+                'Subjects' : [sub1, sub2, sub3, sub4, sub5, sub6, sub7, sub8, sub9, sub10],
+                'Grades' : [grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9, grade10]
             })
 
             # plot bar chart
             st.bar_chart(df, x='Subjects', y='Grades', height=600)
             # put all grades into an array
-            grades = [grade1, grade2, grade3, grade4, grade5, grade6, grade7]
+            grades = [grade1, grade2, grade3, grade4, grade5, grade6, grade7, grade8, grade9, grade10]
             stats = Calc(grades)
             stats.calc_states()
             # Get numbers for fails, passes, and high grade
