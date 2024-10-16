@@ -22,6 +22,9 @@ with st.container():
         sub5 = st.selectbox("Subject 5", vars.subjects, index=None, placeholder="Please enter a subject")
         sub6 = st.selectbox("Subject 6", vars.subjects, index=None, placeholder="Please enter a subject")
         sub7 = st.selectbox("Subject 7", vars.subjects, index=None, placeholder="Please enter a subject")
+        sub8 = st.selectbox("Subject 8", vars.subjects, index=None, placeholder="Please enter a subject")
+        sub9 = st.selectbox("Subject 9", vars.subjects, index=None, placeholder="Please enter a subject")
+        sub10 = st.selectbox("Subject 10", vars.subjects, index=None, placeholder="Please enter a subject")
     with col_grade:
         grade1 = st.selectbox("Grade 1", vars.grades, index=None, placeholder="Please choose a grade")
         grade2 = st.selectbox("Grade 2", vars.grades, index=None, placeholder="Please choose a grade")
@@ -30,6 +33,9 @@ with st.container():
         grade5 = st.selectbox("Grade 5", vars.grades, index=None, placeholder="Please choose a grade")
         grade6 = st.selectbox("Grade 6", vars.grades, index=None, placeholder="Please choose a grade")
         grade7 = st.selectbox("Grade 7", vars.grades, index=None, placeholder="Please choose a grade")
+        grade8 = st.selectbox("Grade 8", vars.grades, index=None, placeholder="Please choose a grade")
+        grade9 = st.selectbox("Grade 9", vars.grades, index=None, placeholder="Please choose a grade")
+        grade10 = st.selectbox("Grade 10", vars.grades, index=None, placeholder="Please choose a grade")
     if st.button("Submit"):
         subs = [sub1, sub2, sub3, sub4, sub5, sub6, sub7]
         double = False
