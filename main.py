@@ -64,6 +64,7 @@ with st.container():
             passes = stats.get_passes()
             highs = stats.get_highs()
             # total amount of grades
+            # Show numbers
             total = fails + passes
             st.title("You are on track to")
             st.header(f"You got {fails} fails.")
@@ -73,4 +74,3 @@ with st.container():
             pie = Pie(fails, passes, highs, total)
             pie.percent()
             pie.plot_chart()
-            # Show numbers

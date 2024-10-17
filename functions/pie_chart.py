@@ -11,8 +11,8 @@ class Pie:
         self.total = total
     def percent(self):
         self.fail = (self.fails / self.total) * 100
-        self.pass_ = (self.passes / self.passes) * 100
-        self.high = (self.passes / self.passes) * 100
+        self.pass_ = (self.passes / self.total) * 100
+        self.high = (self.highs / self.total) * 100
     def plot_chart(self):
         self.sizes = [self.fail, self.pass_, self.high]
         self.labels = ["Fails", "Passes", "Highs"]
